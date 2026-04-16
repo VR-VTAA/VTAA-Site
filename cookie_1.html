@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Policy - SSD Scherma Storica Veneto Trentino Alto Adige</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --vtaa-red: #7e1f1a;
+            --vtaa-red-dark: #601813;
+            --vtaa-red-solid: #6e1818;
+            --vtaa-ink: #141313;
+            --vtaa-muted: #6c757d;
+            --vtaa-bg: #faf9f7;
+            --radius: 18px;
+            --shadow: 0 12px 28px rgba(0,0,0,.09);
+            --border: 1px solid #e7e1dc;
+            --container: 1180px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: var(--vtaa-ink);
+            background: linear-gradient(180deg, #f7f3f0 0%, var(--vtaa-bg) 100%);
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .container {
+            width: min(var(--container), calc(100% - 2rem));
+            margin: 0 auto;
+        }
+
+        .top-wrap {
+            position: relative;
+            min-height: 560px;
+            background:
+                linear-gradient(180deg, rgba(16,12,12,.18) 0%, rgba(16,12,12,.08) 18%, rgba(16,12,12,.12) 42%, rgba(250,249,247,.18) 72%, rgba(250,249,247,.92) 90%, var(--vtaa-bg) 100%),
+                url('img/Banner Youtube VTAA.png') center 22% / cover no-repeat;
+        }
+
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            background: rgba(126, 31, 26, 0);
+            border-bottom: 1px solid rgba(255,255,255,.14);
+            backdrop-filter: blur(0px);
+            transition: background .25s ease, border-color .25s ease, backdrop-filter .25s ease, box-shadow .25s ease;
+        }
+
+        .site-header.scrolled {
+            background: rgba(110, 24, 24, .97);
+            border-bottom-color: rgba(255,255,255,.08);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 24px rgba(0,0,0,.15);
+        }
+
+        .site-header-inner {
+            min-height: 92px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 0;
+        }
+
+        .site-logo {
+            width: 68px;
+            height: 68px;
+            object-fit: contain;
+            flex: 0 0 68px;
+            filter: drop-shadow(0 6px 12px rgba(0,0,0,.2));
+        }
+
+        .site-title {
+            margin: 0;
+            font-size: clamp(1.1rem, 1.8vw, 1.7rem);
+            line-height: 1.15;
+            font-weight: 800;
+            letter-spacing: .2px;
+            color: #fff;
+            text-shadow: 0 2px 10px rgba(0,0,0,.22);
+        }
+
+        .hero {
+            min-height: 420px;
+            padding-top: 92px;
+        }
+
+        .section {
+            padding: 1.4rem 0 0;
+        }
+
+        .section-title {
+            margin: 0 0 1rem;
+            font-size: clamp(1.45rem, 2vw, 2rem);
+            line-height: 1.1;
+        }
+
+        .section-subtitle {
+            margin: -.2rem 0 1.3rem;
+            color: #5b5755;
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.2rem;
+        }
+
+        .area-card {
+            background: #fff;
+            border: var(--border);
+            border-radius: 24px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+            min-height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .area-head {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #ece7e3;
+        }
+
+        .area-title-wrap {
+            display: flex;
+            align-items: center;
+            gap: .95rem;
+            min-width: 0;
+        }
+
+        .area-logo-shell {
+            width: 82px;
+            height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 82px;
+            overflow: visible;
+            background: transparent;
+            border: 0;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0;
+        }
+
+        .area-logo-shell img {
+            max-width: 82px;
+            max-height: 82px;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 10px rgba(0,0,0,.08));
+        }
+
+        .area-head h3 {
+            margin: 0;
+            font-size: 1.35rem;
+        }
+
+        .area-manager {
+            margin: .35rem 0 0;
+            color: #5b5755;
+            font-size: .95rem;
+        }
+
+        .area-content {
+            display: flex;
+            flex-direction: column;
+            gap: .95rem;
+        }
+
+        .area-block {
+            background: #fbfaf9;
+            border: 1px solid #ece7e3;
+            border-radius: 16px;
+            padding: 1rem;
+        }
+
+        .area-block h4 {
+            margin: 0 0 .8rem;
+            font-size: .95rem;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            color: var(--vtaa-red);
+        }
+
+        .course-list, .footer-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .course-list li {
+            display: flex;
+            gap: .7rem;
+            align-items: flex-start;
+            padding: .55rem 0;
+            color: #302d2c;
+        }
+
+        .course-list i,
+        .social-links i, .footer-list i {
+            color: var(--vtaa-red);
+            width: 1rem;
+            text-align: center;
+            margin-top: .18rem;
+            flex: 0 0 1rem;
+        }
+
+        .course-line {
+            line-height: 1.5;
+        }
+
+        .course-line strong {
+            color: #191717;
+        }
+
+        .course-line a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .course-line a:hover {
+            color: var(--vtaa-red);
+        }
+
+        .contact-icons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .6rem;
+            margin-top: .1rem;
+        }
+
+        .contact-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 999px;
+            border: 1px solid #d9cbc2;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            color: var(--vtaa-red);
+            text-decoration: none;
+            transition: transform .18s ease, border-color .18s ease, background .18s ease;
+        }
+
+        .contact-icon:hover {
+            transform: translateY(-1px);
+            border-color: var(--vtaa-red);
+            background: #faf4f3;
+        }
+
+        .partners-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .partner-card {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 1.25rem;
+            background: #fff;
+            border: var(--border);
+            border-radius: 24px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+            align-items: center;
+        }
+
+        .partner-logo {
+            background: linear-gradient(180deg, #fff 0%, #f7f3ef 100%);
+            border: 1px solid #eee7e2;
+            border-radius: 18px;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 150px;
+        }
+
+        .partner-logo img {
+            max-height: 120px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .partner-card h3 {
+            margin: 0 0 .35rem;
+            font-size: 1.25rem;
+        }
+
+        .partner-card .lead {
+            margin: 0 0 .65rem;
+            font-weight: 600;
+            color: #2f2b2a;
+        }
+
+        .partner-card p {
+            margin: 0;
+            color: #4c4846;
+        }
+
+        .partner-actions {
+            display: flex;
+            gap: .65rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: .55rem;
+            border: 1px solid var(--vtaa-red);
+            background: var(--vtaa-red);
+            color: #fff !important;
+            border-radius: 999px;
+            padding: .72rem 1rem;
+            font-weight: 700;
+            font-size: .92rem;
+            transition: background .2s ease, transform .2s ease, border-color .2s ease;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: var(--vtaa-red-dark);
+            border-color: var(--vtaa-red-dark);
+            transform: translateY(-1px);
+        }
+
+        .btn--ghost {
+            background: #fff;
+            color: var(--vtaa-red) !important;
+        }
+
+        .btn--ghost:hover {
+            background: #faf4f3;
+            color: var(--vtaa-red-dark) !important;
+            border-color: var(--vtaa-red-dark);
+        }
+
+        .partners-demo {
+            background: linear-gradient(180deg, #fff 0%, #f8f4f1 100%);
+            border: var(--border);
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            padding: 1.25rem;
+        }
+
+        .partner-logos {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .partner-tile {
+            background: #fff;
+            border: 1px solid #ece7e3;
+            border-radius: 18px;
+            padding: 1rem;
+            min-height: 168px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1rem;
+            text-decoration: none;
+            box-shadow: 0 6px 18px rgba(0,0,0,.04);
+            transition: transform .18s ease, border-color .18s ease;
+        }
+
+        .partner-tile:hover {
+            transform: translateY(-2px);
+            border-color: #d9cbc2;
+        }
+
+        .partner-tile-logo {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 96px;
+        }
+
+        .partner-tile-logo img {
+            max-height: 82px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .partner-tile span {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+            font-weight: 700;
+            color: var(--vtaa-red);
+            text-align: center;
+        }
+
+        .footer {
+            background: #161616;
+            color: #f3f1ef;
+            margin-top: 3rem;
+            padding: 3rem 0 1.2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.5rem;
+        }
+
+        .footer h5,
+        .footer h6 {
+            margin: 0 0 1rem;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            font-size: 1rem;
+        }
+
+        .footer p,
+        .footer li {
+            margin: 0 0 .45rem;
+            color: #dfd7d3;
+            font-size: .95rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            width: 42px;
+            height: 42px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,.24);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,.08);
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-links a i,
+        .footer-list i {
+            color: #fff;
+        }
+
+        .social-links a:hover {
+            border-color: rgba(255,255,255,.5);
+            background: rgba(255,255,255,.14);
+            color: #ffffff;
+        }
+
+        .footer hr {
+            border: 0;
+            border-top: 1px solid rgba(255,255,255,.14);
+            margin: 1.7rem 0 1rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            color: #d5ceca;
+            font-size: .9rem;
+        }
+
+        @media (max-width: 980px) {
+            .areas-grid, .footer-grid, .partner-logos, .partner-card {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                width: min(var(--container), calc(100% - 1rem));
+            }
+
+            .site-header-inner {
+                min-height: 80px;
+            }
+
+            .site-logo {
+                width: 56px;
+                height: 56px;
+                flex-basis: 56px;
+            }
+
+            .area-card, .partners-demo, .partner-card {
+                padding: 1rem;
+            }
+
+            .area-head {
+                align-items: flex-start;
+            }
+
+            .area-title-wrap {
+                align-items: flex-start;
+            }
+
+            .area-logo-shell {
+                width: 70px;
+                height: 70px;
+                flex-basis: 70px;
+            }
+
+            .area-logo-shell img {
+                max-width: 70px;
+                max-height: 70px;
+            }
+
+            .top-wrap {
+                min-height: 430px;
+                background-position: center 18%;
+            }
+
+            .hero {
+                min-height: 300px;
+                padding-top: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-wrap" id="top-wrap">
+        <header class="site-header" id="site-header">
+            <div class="container site-header-inner">
+    <a href="index.html" style="display:flex; align-items:center; gap:1rem; text-decoration:none;">
+        <img src="img/Logo VTAA.png" alt="Logo SSD Scherma Storica Veneto Trentino Alto Adige" class="site-logo" />
+        <h2 class="site-title">SSD Scherma Storica Veneto Trentino Alto Adige</h2>
+    </a>
+</div>
+        </header>
+
+        <section class="hero" aria-hidden="true"></section>
+    </div>
+
+    <main>
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">Cookie Policy</h2>
+
+<p>
+La presente Cookie Policy descrive l’utilizzo dei cookie da parte del sito della
+<strong>Società Sportiva Dilettantistica Scherma Storica Veneto Trentino Alto Adige</strong>.
+Per maggiori informazioni sul trattamento dei dati personali, si rimanda alla
+<a href="privacy.html">Privacy Policy</a>.
+</p>
+
+<h3>1. Cosa sono i cookie</h3>
+
+<p>
+I cookie sono piccoli file di testo che i siti web possono salvare sul dispositivo
+dell’utente durante la navigazione, al fine di garantire il corretto funzionamento
+del sito e migliorare l’esperienza d’uso.
+</p>
+
+<h3>2. Tipologie di cookie utilizzati</h3>
+
+<p>
+Questo sito utilizza esclusivamente cookie tecnici necessari al funzionamento del sito, tra cui:
+</p>
+
+<ul>
+<li><strong>Cookie di navigazione o di sessione</strong>, che permettono il normale funzionamento del sito;</li>
+<li><strong>Cookie tecnici</strong>, utilizzati per garantire sicurezza e corretto utilizzo dei servizi.</li>
+</ul>
+
+<p>
+Non vengono utilizzati cookie di profilazione né cookie di terze parti a fini di marketing o analisi.
+</p>
+
+<h3>3. Base giuridica del trattamento</h3>
+
+<p>
+L’utilizzo dei cookie tecnici si basa sul <strong>legittimo interesse del titolare</strong>
+a garantire il funzionamento e la sicurezza del sito.
+</p>
+
+<h3>4. Gestione dei cookie</h3>
+
+<p>
+L’utente può gestire o disabilitare i cookie direttamente tramite le impostazioni del proprio browser.
+La disabilitazione dei cookie tecnici potrebbe compromettere il corretto funzionamento del sito.
+</p>
+
+<h3>5. Aggiornamenti</h3>
+
+<p>
+La presente Cookie Policy può essere aggiornata in caso di modifiche tecniche o normative.
+</p>
+
+</div>
+</section>
+</main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h5>SSD Scherma Storica Veneto Trentino Alto Adige</h5>
+                    <p>Partita IVA: 05140800235</p>
+                    <p>Sede Legale: Località Vecchi 6 - 37019 Peschiera del Garda (VR)</p>
+                    <p>PEC: vtaa@pec.schermastoricavtaa.it</p>
+                    <p>REA: 473655</p>
+                </div>
+
+                <div>
+                    <h6>Segreteria</h6>
+                    <ul class="footer-list">
+                        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:segreteria@schermastoricavtaa.it">Segreteria</a></li>
+                        <li><i class="fa-solid fa-phone"></i> <a href="tel:+393479319727">Reparto Commerciale</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/schermastoricavtaa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/schermastoricavtaa" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://wa.me/393479319727" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="tg://resolve?phone=393479319727" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <div class="footer-bottom">
+                © 2026 Scherma Storica Veneto Trentino Alto Adige — Tutti i diritti riservati —
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="cookie.html">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+          const header = document.getElementById('site-header');
+          const topWrap = document.getElementById('top-wrap');
+
+          function updateHeader() {
+            const trigger = topWrap.offsetHeight - header.offsetHeight - 30;
+            if (window.scrollY > trigger) {
+              header.classList.add('scrolled');
+            } else {
+              header.classList.remove('scrolled');
+            }
+          }
+
+          updateHeader();
+          window.addEventListener('scroll', updateHeader, { passive: true });
+          window.addEventListener('resize', updateHeader);
+        })();
+    </script>
+</body>
+</html>
