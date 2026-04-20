@@ -282,7 +282,7 @@ a {
 
 .quicklinks-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1.2rem;
 }
 
@@ -1023,112 +1023,196 @@ a {
 <!-- HEADER.TXT -->
 
     <main>
-	<section class="section">
-			<div class="container">
-				<h2 class="section-title">Appuntamenti di Aprile</h2>
-
-				<div class="events-grid">
-
-					<article class="event-card">
-						<h3>Open Day e Torneo Interno</h3>
-						<ul class="event-meta">
-							<li><i class="fa-regular fa-calendar"></i> Sabato 11 aprile 2026</li>
-							<li><i class="fa-regular fa-clock"></i> 14:00–18:00</li>
-							<li>
-								<i class="fa-solid fa-location-dot"></i>
-								<a href="https://www.google.com/maps/dir/?api=1&destination=Via+Ippogrifo+2,+37135+Verona+VR" target="_blank">
-									Verona
-								</a>
-							</li>
-						</ul>
-					</article>
-					
-					<article class="event-card">
-						<h3>Ludicamp</h3>
-						<ul class="event-meta">
-							<li><i class="fa-regular fa-calendar"></i> Sabato 11 e Domenica 12 aprile 2026</li>
-							<li><i class="fa-regular fa-clock"></i> 10:00–20:00</li>
-							<li>
-								<i class="fa-solid fa-location-dot"></i>
-								<a href="https://maps.app.goo.gl/mzFdHYF5wPjCUyQ77" target="_blank">
-									Trento - Area APPM
-								</a>
-							</li>
-						</ul>
-					</article>
-					
-					<article class="event-card">
-						<h3>Torneo internazionale AlpeAdria</h3>
-						<ul class="event-meta">
-							<li><i class="fa-regular fa-calendar"></i> Domenica 19 aprile 2026</li>
-							<li><i class="fa-regular fa-clock"></i> 08:00–18:00</li>
-							<li>
-								<i class="fa-solid fa-location-dot"></i>
-								<a href="https://maps.app.goo.gl/qrEuYLS7ZXdyq6oF6" target="_blank">
-									Padova - Via Ugo Bassi
-								</a>
-							</li>
-						</ul>
-					</article>
-					
-					<article class="event-card">
-						<h3>Open Day e Torneo Interno</h3>
-						<ul class="event-meta">
-							<li><i class="fa-regular fa-calendar"></i> Domenica 26 aprile 2026</li>
-							<li><i class="fa-regular fa-clock"></i> 09:00–13:00</li>
-							<li>
-								<i class="fa-solid fa-location-dot"></i>
-								<a href="https://www.google.com/maps/dir/?api=1&destination=Via+Jacopo+Crescini+4,+35126+Padova+PD" target="_blank">
-									Padova
-								</a>
-							</li>
-						</ul>
-					</article>
-
-				</div>
-			</div>
-		</section>
-		
-		<section class="section section-claim">
-			<div class="container">
-				<p class="claim-text">
-					Scopri la più grande realtà di scherma storica del Nord Italia!
-				</p>
-			</div>
-		</section>
-
-		<section class="section">
-			<div class="container">
-				<h2 class="section-title">Scopri i nostri percorsi</h2>
-
-				<div class="quicklinks-grid">
-					<a class="quicklink-card" href="corsiAdulti.html">
-					<div class="quicklink-head">
-						<i class="fa-solid fa-user-group"></i>
-						<h3>Corsi Adulti</h3>
-					</div>
-						<p>Percorsi dedicati a principianti e praticanti adulti.</p>
-					</a>
-
-					<a class="quicklink-card" href="corsiRagazzi.html">
-					<div class="quicklink-head">
-						<i class="fa-solid fa-children"></i>
-						<h3>Corsi Ragazzi</h3>
-				</div>
-						<p>Attività introduttive e formative per giovani schermidori.</p>
-					</a>
-
-					<a class="quicklink-card" href="corsiArtistica.html">
-					<div class="quicklink-head">
-						<i class="fa-solid fa-masks-theater"></i>
-						<h3>Scherma Artistica</h3>
-				</div>
-						<p>Studio scenico, interpretazione e lavoro coreografico.</p>
-					</a>
-				</div>
-			</div>
-		</section>
+	<section class="section section-intro">
+		<div class="container">
+			<p class="intro-text">
+				Scopri i corsi di scherma storica sportiva attivi nelle nostre sedi per la stagione 2025/2026.
+			</p>
+		</div>
+	</section>
 	
+        <section class="section">
+            <div class="container">
+                <!-- <h1 class="section-title">Scopri i corsi di scherma storica sportiva attivi nelle nostre sedi per la stagione 2025/2026.</h1> -->
+
+                <div class="areas-grid">
+                    <article class="area-card" id="verona">
+                        <div class="area-head">
+                            <div class="area-title-wrap">
+                                <div class="area-logo-shell">
+                                    <img src="img/Logo-Verona.png" alt="Logo area Verona" />
+                                </div>
+                                <div>
+                                    <h3>Verona</h3>
+                                    <p class="area-manager"><strong>Responsabile di Area:</strong> Luca Zanini</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="area-content">
+                            <div class="area-block">
+                                <h4>Corsi</h4>
+                                <ul class="course-list">
+                                    <li>
+										<div class="course-line">
+											<i class="fa-regular fa-calendar"></i>
+											<strong>Adulti</strong> — Giovedì 21:00
+											<br>
+											<i class="fa-solid fa-location-dot"></i>
+											<a href="https://www.google.com/maps/dir/?api=1&destination=Via+Ippogrifo+2,+37135+Verona+VR" target="_blank">Via Ippogrifo, 2, 37135 Verona VR</a>
+										</div>
+									</li>
+                                </ul>
+                            </div>
+                            <div class="area-block">
+                                <h4>Contatti</h4>
+                                <div class="contact-icons">
+                                    <a class="contact-icon" href="tel:+393479319727" aria-label="Telefono Verona" title="Telefono"><i class="fa-solid fa-phone"></i></a>
+                                    <a class="contact-icon" href="https://wa.me/393479319727" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Verona" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a class="contact-icon" href="tg://resolve?phone=393479319727" aria-label="Telegram Verona" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                                    <a class="contact-icon" href="mailto:verona@schermastoricavtaa.it" aria-label="Email Verona" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                                    <a class="contact-icon" href="https://www.facebook.com/SchermaStoricaVerona" target="_blank" rel="noopener noreferrer" aria-label="Facebook Verona" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a class="contact-icon" href="https://www.instagram.com/scherma_storica_verona/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Verona" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+					<article class="area-card" id="villa-lagarina">
+                        <div class="area-head">
+                            <div class="area-title-wrap">
+                                <div class="area-logo-shell">
+                                    <img src="img/Logo-Lagarina.png" alt="Logo area Villa Lagarina" />
+                                </div>
+                                <div>
+                                    <h3>Villa Lagarina</h3>
+                                    <p class="area-manager"><strong>Responsabile di Area:</strong> Andrea Rossini</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="area-content">
+                            <div class="area-block">
+                                <h4>Corsi</h4>
+                                <ul class="course-list">
+                                    <li><div class="course-line"><i class="fa-regular fa-calendar"></i><strong>Adulti</strong> — Martedì e Giovedì 20:00<br><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/dir/?api=1&destination=Via+Stockstadt+Am+Rhein+9,+38060+Villa+Lagarina+TN" target="_blank" rel="noopener noreferrer">Via Stockstadt Am Rhein, 9, 38060 Villa Lagarina TN</a></div></li>
+                                </ul>
+                            </div>
+                            <div class="area-block">
+                                <h4>Contatti</h4>
+                                <div class="contact-icons">
+                                    <a class="contact-icon" href="tel:+393519731770" aria-label="Telefono Villa Lagarina" title="Telefono"><i class="fa-solid fa-phone"></i></a>
+                                    <a class="contact-icon" href="https://wa.me/393519731770" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Villa Lagarina" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a class="contact-icon" href="tg://resolve?phone=393519731770" aria-label="Telegram Villa Lagarina" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                                    <a class="contact-icon" href="mailto:villalagarina@schermastoricavtaa.it" aria-label="Email Villa Lagarina" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                                    <a class="contact-icon" href="https://www.facebook.com/SAAMlagarina" target="_blank" rel="noopener noreferrer" aria-label="Facebook Villa Lagarina" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a class="contact-icon" href="https://www.instagram.com/scherma_storica_lagarina/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Villa Lagarina" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                
+
+                    <article class="area-card area-card" id="padova">
+                        <div class="area-head">
+                            <div class="area-title-wrap">
+                                <div class="area-logo-shell">
+                                    <img src="img/Logo-Padova.png" alt="Logo area Verona" />
+                                </div>
+                                <div>
+                                    <h3>Padova</h3>
+                                    <p class="area-manager"><strong>Responsabile di Area:</strong> Andrea Borin</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="area-content">
+                            <div class="area-block">
+                                <h4>Corsi</h4>
+                                <ul class="course-list">
+                                    <li><div class="course-line"><i class="fa-regular fa-calendar"></i><strong>Adulti</strong> — Lunedì e Mercoledì 20:00<br><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/dir/?api=1&destination=Via+Jacopo+Crescini+4,+35126+Padova+PD" target="_blank" rel="noopener noreferrer">Via Jacopo Crescini, 4, 35126 Padova PD</a></div></li>
+                                </ul>
+                            </div>
+                            <div class="area-block">
+                                <h4>Contatti</h4>
+                                <div class="contact-icons">
+                                    <a class="contact-icon" href="tel:+393468481493" aria-label="Telefono Padova" title="Telefono"><i class="fa-solid fa-phone"></i></a>
+                                    <a class="contact-icon" href="https://wa.me/393468481493" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Padova" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a class="contact-icon" href="tg://resolve?phone=393468481493" aria-label="Telegram Padova" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                                    <a class="contact-icon" href="mailto:padova@schermastoricavtaa.it" aria-label="Email Padova" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                                    <a class="contact-icon" href="https://www.facebook.com/schermastoricapadova" target="_blank" rel="noopener noreferrer" aria-label="Facebook Padova" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a class="contact-icon" href="https://www.instagram.com/scherma_storica_padova/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Padova" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="area-card" id="vicenza">
+                        <div class="area-head">
+                            <div class="area-title-wrap">
+                                <div class="area-logo-shell">
+                                    <img src="img/Logo-Vicenza.png" alt="Logo area Vicenza" />
+                                </div>
+                                <div>
+                                    <h3>Vicenza</h3>
+                                    <p class="area-manager"><strong>Responsabile di Area:</strong> Luca Semenzato</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="area-content">
+                            <div class="area-block">
+                                <h4>Corsi</h4>
+                                <ul class="course-list">
+                                    <li><div class="course-line"><i class="fa-regular fa-calendar"></i><strong>Adulti</strong> — Lunedì e Venerdì 20:00<br><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/dir/?api=1&destination=Via+Riello+150,+36100+Vicenza+VI" target="_blank" rel="noopener noreferrer">Via Riello, 150, 36100 Vicenza VI</a></div></li>
+                                </ul>
+                            </div>
+                            <div class="area-block">
+                                <h4>Contatti</h4>
+                                <div class="contact-icons">
+                                    <a class="contact-icon" href="tel:+393312252977" aria-label="Telefono Vicenza" title="Telefono"><i class="fa-solid fa-phone"></i></a>
+                                    <a class="contact-icon" href="https://wa.me/393312252977" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Vicenza" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a class="contact-icon" href="tg://resolve?phone=393312252977" aria-label="Telegram Vicenza" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                                    <a class="contact-icon" href="mailto:vicenza@schermastoricavtaa.it" aria-label="Email Vicenza" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                                    <a class="contact-icon" href="https://www.facebook.com/schermastoricavicenza" target="_blank" rel="noopener noreferrer" aria-label="Facebook Vicenza" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a class="contact-icon" href="https://www.instagram.com/scherma_storica_vicenza/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Vicenza" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="area-card" id="trento">
+                        <div class="area-head">
+                            <div class="area-title-wrap">
+                                <div class="area-logo-shell">
+                                    <img src="img/Logo-Trento.png" alt="Logo area Trento" />
+                                </div>
+                                <div>
+                                    <h3>Trento</h3>
+                                    <p class="area-manager"><strong>Responsabile di Area:</strong> Riccardo Longo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="area-content">
+                            <div class="area-block">
+                                <h4>Corsi</h4>
+                                <ul class="course-list">
+                                    <li><div class="course-line"><i class="fa-regular fa-calendar"></i><strong>Adulti</strong> — Lunedì e Mercoledì 20:00<br><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/dir/?api=1&destination=Via+IV+Novembre+23,+38121+Trento+TN" target="_blank" rel="noopener noreferrer">Via IV Novembre, 23, 38121 Trento TN</a></div></li>
+                                </ul>
+                            </div>
+                            <div class="area-block">
+                                <h4>Contatti</h4>
+                                <div class="contact-icons">
+                                    <a class="contact-icon" href="tel:+393404516780" aria-label="Telefono Trento" title="Telefono"><i class="fa-solid fa-phone"></i></a>
+                                    <a class="contact-icon" href="tg://resolve?phone=393404516780" aria-label="Telegram Trento" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                                    <a class="contact-icon" href="mailto:trento@schermastoricavtaa.it" aria-label="Email Trento" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                                    <a class="contact-icon" href="https://www.facebook.com/SAAMTrento" target="_blank" rel="noopener noreferrer" aria-label="Facebook Trento" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a class="contact-icon" href="https://www.instagram.com/scherma_storica_trento/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Trento" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    </div>
+            </div>
+        </section>
+
         <!--<section class="section">
             <div class="container">
                 <h2 class="section-title">Partner</h2>
@@ -1147,32 +1231,8 @@ a {
             </div>
         </section>-->
 
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title">Collaborazioni</h2>
-                <div class="partners-grid">
-                    <article class="partner-card">
-                        <div class="partner-logo">
-                            <img src="img/logo-ANS.png" alt="Accademia Nazionale di Scherma" />
-                        </div>
-                        <div>
-                            <h3>Accademia Nazionale di Scherma</h3>
-                            <p class="lead">Una sinergia fra passato e presente per la scherma storica</p>
-                            <p>
-                                Siamo lieti di annunciare la collaborazione con l’Accademia Nazionale di Scherma, istituzione riconosciuta dallo Stato per la formazione dei maestri d’armi in ogni sua forma. Insieme lavoreremo affinché la disciplina della scherma storica, artistica e sportiva trovi nuovi spazi di crescita, formazione e valorizzazione. Attraverso corsi, seminari e eventi congiunti, intendiamo unire l’alto profilo tecnico-didattico dell’Accademia con il nostro progetto, offrendo così ai partecipanti opportunità di apprendimento profonde e aggiornate. Questa partnership rappresenta un passo significativo per elevare la qualità della pratica e la diffusione della cultura della lama.
-                            </p>
-                            <div class="partner-actions">
-                                <a class="btn" href="https://www.accademianazionaledischerma.it/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i> Vai al sito</a>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
     </main>
 
-<!-- FOOTER.TXT -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -1221,7 +1281,6 @@ a {
             </div>
         </div>
     </footer>
-<!-- FOOTER.TXT -->
 
     <script>
         (function () {

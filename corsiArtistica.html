@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+	<meta name="robots" content="noindex, nofollow">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy – SSD Scherma Storica Veneto Trentino Alto Adige</title>
+    <title>SSD Scherma Storica Veneto Trentino Alto Adige</title>
 	
-	<meta name="description" content="Privacy Policy della SSD Scherma Storica Veneto Trentino Alto Adige.">
-	<meta name="robots" content="index, follow">
+	<meta name="description" content="SSD Scherma Storica Veneto Trentino Alto Adige: corsi di scherma storica a Verona, Villa Lagarina, Padova, Vicenza e Trento. Allenamenti, contatti, partner e collaborazioni.">
+	<!-- <meta name="robots" content="index, follow"> -->
 	<meta name="author" content="SSD Scherma Storica Veneto Trentino Alto Adige">
-	<link rel="canonical" href="https://www.schermastoricavtaa.it/privacy.html">
+	<link rel="canonical" href="https://www.schermastoricavtaa.it/index.html">
 
 	<meta property="og:type" content="website">
 	<meta property="og:locale" content="it_IT">
-	<meta property="og:title" content="Privacy Policy – SSD Scherma Storica Veneto Trentino Alto Adige">
-	<meta property="og:description" content="Privacy Policy della SSD Scherma Storica Veneto Trentino Alto Adige.">
-	<meta property="og:url" content="https://www.schermastoricavtaa.it/privacy.html">
+	<meta property="og:title" content="SSD Scherma Storica Veneto Trentino Alto Adige">
+	<meta property="og:description" content="Corsi di scherma storica a Verona, Villa Lagarina, Padova, Vicenza e Trento.">
+	<meta property="og:url" content="https://www.schermastoricavtaa.it/index.html">
 	<meta property="og:image" content="https://www.schermastoricavtaa.it/img/banner-youtube-vtaa.png">
 	<meta property="og:image:alt" content="Schermidori della SSD Scherma Storica Veneto Trentino Alto Adige">
 
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Privacy Policy – SSD Scherma Storica Veneto Trentino Alto Adige">
-	<meta name="twitter:description" content="Privacy Policy della SSD Scherma Storica Veneto Trentino Alto Adige.">
+	<meta name="twitter:title" content="SSD Scherma Storica Veneto Trentino Alto Adige">
+	<meta name="twitter:description" content="Corsi di scherma storica a Verona, Villa Lagarina, Padova, Vicenza e Trento.">
 	<meta name="twitter:image" content="https://www.schermastoricavtaa.it/img/banner-youtube-vtaa.png">
 
 	<script type="application/ld+json">
@@ -28,7 +29,7 @@
 	  "@context": "https://schema.org",
 	  "@type": "SportsActivityLocation",
 	  "name": "SSD Scherma Storica Veneto Trentino Alto Adige",
-	  "url": "https://www.schermastoricavtaa.it/privacy.html",
+	  "url": "https://www.schermastoricavtaa.it/index.html",
 	  "logo": "https://www.schermastoricavtaa.it/img/logo-vtaa.png",
 	  "image": "https://www.schermastoricavtaa.it/img/banner-youtube-vtaa.png",
 	  "email": "segreteria@schermastoricavtaa.it",
@@ -52,9 +53,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
 	<!-- STYLE.TXT -->
-    <style>
+<style>
 
 :root {
     --vtaa-red: #7e1f1a;
@@ -110,6 +110,8 @@ a {
         );
 }
 
+/* HEADER */
+
 .site-header {
     position: fixed;
     top: 0;
@@ -131,9 +133,19 @@ a {
 .site-header-inner {
     min-height: 92px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem 0;
+    justify-content: center;
+    gap: .6rem;
+    padding: .8rem 0;
+}
+
+.site-header-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    text-align: center;
 }
 
 .site-header-link {
@@ -161,8 +173,37 @@ a {
     text-shadow: 0 2px 10px rgba(0,0,0,.22);
 }
 
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.site-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: .95rem;
+    padding: .7rem .95rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.12);
+    transition: background .18s ease, border-color .18s ease, transform .18s ease;
+}
+
+.site-nav a:hover {
+    background: rgba(255,255,255,.16);
+    border-color: rgba(255,255,255,.24);
+    transform: translateY(-1px);
+}
+
+/* HERO */
+
 .hero {
-    padding-top: 92px;
+    padding-top: 145px;
 }
 
 .hero-banner {
@@ -170,6 +211,8 @@ a {
     height: auto;
     display: block;
 }
+
+/* SEZIONI */
 
 .section {
     padding: 1.4rem 0 0;
@@ -233,6 +276,73 @@ a {
 
 .event-meta a:hover {
     color: var(--vtaa-red);
+}
+
+/* LINK RAPIDI / PAGINE */
+
+.quicklinks-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+
+.quicklink-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 150px;
+    background: #fff;
+    border: var(--border);
+    border-radius: 24px;
+    padding: 1.25rem;
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+
+.quicklink-card:hover {
+    transform: translateY(-2px);
+    border-color: #d9cbc2;
+    box-shadow: 0 16px 30px rgba(0,0,0,.10);
+}
+
+.quicklink-card i {
+    color: var(--vtaa-red);
+    font-size: 1.5rem;
+    margin-bottom: .8rem;
+}
+
+.quicklink-card h3 {
+    margin: 0 0 .35rem;
+    font-size: 1.15rem;
+    color: var(--vtaa-red-dark);
+}
+
+.quicklink-card p {
+    margin: 0;
+    color: #5b5755;
+    line-height: 1.5;
+    font-size: .95rem;
+}
+
+.quicklink-head {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin-bottom: .5rem;
+}
+
+.quicklink-head i {
+    font-size: 1.2rem;
+    color: var(--vtaa-red);
+    flex: 0 0 auto;
+}
+
+.quicklink-head h3 {
+    margin: 0;
+    font-size: 1.15rem;
+	margin-bottom: 0.8rem;
+    color: var(--vtaa-red-dark);
 }
 
 /* AREE */
@@ -313,20 +423,12 @@ a {
     color: var(--vtaa-red);
 }
 
+/* CORSI */
+
 .course-list {
     list-style: none;
     padding-left: 0;
     margin: 0;
-}
-
-.course-list i,
-.footer-list i,
-.event-meta i {
-    color: var(--vtaa-red);
-    width: 1rem;
-    text-align: center;
-    margin-top: .18rem;
-    flex: 0 0 1rem;
 }
 
 .course-list li {
@@ -335,13 +437,12 @@ a {
     padding: .55rem 0;
 }
 
-.course-list i,
-.social-links i,
-.footer-list i {
+.course-list i {
     color: var(--vtaa-red);
     width: 1rem;
     text-align: center;
     margin-top: .18rem;
+    flex: 0 0 1rem;
 }
 
 .course-line {
@@ -388,7 +489,57 @@ a {
     background: #faf4f3;
 }
 
-/* PARTNER */
+.section-intro {
+    padding: 2rem 0 1.2rem;
+    text-align: center;
+}
+
+.intro-text {
+    margin: 0;
+    font-size: clamp(1.1rem, 1.6vw, 1.4rem);
+    color: #4c4846;
+    line-height: 1.5;
+}
+
+.section-claim {
+    padding: 3rem 0 2.5rem;
+    text-align: center;
+}
+
+.claim-text {
+    margin: 0;
+    font-family: "Georgia", "Times New Roman", serif; /* 👈 più accademico */
+    font-size: clamp(1.8rem, 2.6vw, 2.6rem);
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--vtaa-red-dark);
+    letter-spacing: .5px;
+}
+
+.claim-text::before,
+.claim-text::after {
+    content: "";
+    display: block;
+    width: 770px;
+    height: 1px;
+    margin: 0 auto;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--vtaa-red),
+        transparent
+    );
+}
+
+.claim-text::before {
+    margin-bottom: 1rem;
+}
+
+.claim-text::after {
+    margin-top: 1rem;
+}
+
+/* COLLABORAZIONI */
 
 .partners-grid {
     display: grid;
@@ -404,6 +555,7 @@ a {
     border-radius: 24px;
     padding: 1.25rem;
     box-shadow: var(--shadow);
+    align-items: center;
 }
 
 .partner-logo {
@@ -414,20 +566,29 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 150px;
 }
 
 .partner-logo img {
     max-height: 120px;
+    width: auto;
     object-fit: contain;
 }
 
 .partner-card h3 {
     margin: 0 0 .35rem;
+    font-size: 1.25rem;
 }
 
 .partner-card .lead {
     margin: 0 0 .65rem;
     font-weight: 600;
+    color: #2f2b2a;
+}
+
+.partner-card p {
+    margin: 0;
+    color: #4c4846;
 }
 
 .partner-actions {
@@ -436,6 +597,8 @@ a {
     flex-wrap: wrap;
     margin-top: 1rem;
 }
+
+/* PARTNER FOOTER */
 
 .footer-partners {
     display: flex;
@@ -461,7 +624,7 @@ a {
     max-height: 50px;
     width: auto;
     object-fit: contain;
-    /*filter: brightness(0) invert(1); /* bianco su sfondo scuro */
+    /* filter: brightness(0) invert(1); */
 }
 
 /* BOTTONI */
@@ -504,10 +667,38 @@ a {
     gap: 1.5rem;
 }
 
+.footer h5,
+.footer h6 {
+    margin: 0 0 1rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: 1rem;
+}
+
 .footer p,
 .footer li {
     color: #dfd7d3;
     font-size: .95rem;
+}
+
+.footer-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: .6rem;
+}
+
+.footer-list i {
+    color: #fff;
+    width: 1rem;
+    text-align: center;
+    margin-top: .18rem;
+    flex: 0 0 1rem;
 }
 
 .social-links {
@@ -529,6 +720,16 @@ a {
     text-decoration: none;
 }
 
+.social-links a i {
+    color: #fff;
+}
+
+.social-links a:hover {
+    border-color: rgba(255,255,255,.5);
+    background: rgba(255,255,255,.14);
+    color: #ffffff;
+}
+
 .footer hr {
     border: 0;
     border-top: 1px solid rgba(255,255,255,.14);
@@ -541,38 +742,7 @@ a {
     font-size: .9rem;
 }
 
-.footer h5,
-.footer h6 {
-    margin: 0 0 1rem;
-    text-transform: uppercase;
-    letter-spacing: .05em;
-    font-size: 1rem;
-}
-
-.footer-list i,
-.social-links a i {
-    color: #fff;
-}
-
-.footer-list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-.footer-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: .6rem;
-}
-
-.social-links a:hover {
-    border-color: rgba(255,255,255,.5);
-    background: rgba(255,255,255,.14);
-    color: #ffffff;
-}
-
-/* PARTNER TILE (loghi partner) */
+/* PARTNER TILE (eventualmente riusabile) */
 
 .partners-demo {
     background: linear-gradient(180deg, #fff 0%, #f8f4f1 100%);
@@ -633,6 +803,95 @@ a {
     text-align: center;
 }
 
+.section-work {
+    padding: 2.5rem 0 0;
+}
+
+.work-box {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 1.2rem;
+    background: linear-gradient(180deg, #fff 0%, #f8f4f1 100%);
+    border: var(--border);
+    border-radius: 24px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.work-eyebrow {
+    margin: 0 0 .5rem;
+    color: var(--vtaa-red);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: .85rem;
+}
+
+.work-text {
+    margin: 0 0 1rem;
+    color: #4c4846;
+    line-height: 1.65;
+}
+
+.work-actions {
+    display: flex;
+    gap: .75rem;
+    flex-wrap: wrap;
+    margin-top: 1.25rem;
+}
+
+.work-points {
+    display: grid;
+    gap: 1rem;
+}
+
+.work-point {
+    background: #fff;
+    border: 1px solid #ece7e3;
+    border-radius: 18px;
+    padding: 1rem;
+}
+
+.work-point i {
+    color: var(--vtaa-red);
+    font-size: 1.35rem;
+    margin-bottom: .75rem;
+}
+
+.work-point h3 {
+    margin: 0 0 .35rem;
+    font-size: 1.05rem;
+    color: var(--vtaa-red-dark);
+}
+
+.work-point p {
+    margin: 0;
+    color: #5b5755;
+    line-height: 1.5;
+    font-size: .95rem;
+}
+
+.work-point-head {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin-bottom: .5rem;
+}
+
+.work-point-head i {
+    color: var(--vtaa-red);
+    font-size: 1.3rem;
+    flex: 0 0 auto;
+}
+
+.work-point-head h3 {
+    margin: 0;
+	margin-bottom: 0.7rem;
+    font-size: 1.05rem;
+    color: var(--vtaa-red-dark);
+    line-height: 1.2;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 980px) {
@@ -643,12 +902,36 @@ a {
     .events-grid {
         grid-template-columns: 1fr;
     }
+
+    .quicklinks-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+	
+	.work-box {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 640px) {
-
     .site-header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .75rem;
         min-height: 80px;
+    }
+
+    .site-nav {
+        width: 100%;
+        gap: .5rem;
+    }
+
+    .site-nav a {
+        font-size: .9rem;
+        padding: .6rem .8rem;
+    }
+
+    .quicklinks-grid {
+        grid-template-columns: 1fr;
     }
 
     .site-logo {
@@ -666,8 +949,8 @@ a {
         width: 70px;
         height: 70px;
     }
-	
-	.course-list {
+
+    .course-list {
         padding-left: 0;
         margin: 0;
     }
@@ -689,22 +972,32 @@ a {
     .course-line i {
         margin-right: .3rem;
     }
-
 }
 
 </style>
 <!-- STYLE.TXT -->
-
 </head>
 <body>
 <!-- HEADER.TXT -->
     <div class="top-wrap" id="top-wrap">
         <header class="site-header" id="site-header">
             <div class="container site-header-inner">
-				<a href="index.html" style="display:flex; align-items:center; gap:1rem; text-decoration:none;">
-					<img src="img/Logo-VTAA.png" alt="Logo SSD Scherma Storica Veneto Trentino Alto Adige" class="site-logo" />
-					<h2 class="site-title">SSD Scherma Storica Veneto Trentino Alto Adige</h2>
-				</a>
+
+				<div class="site-header-brand">
+					<a href="index.html" class="site-header-link">
+						<img src="img/Logo-VTAA.png" class="site-logo" />
+						<h2 class="site-title">SSD Scherma Storica Veneto Trentino Alto Adige</h2>
+					</a>
+				</div>
+
+				<nav class="site-nav">
+					<a href="corsiAdulti.html">Adulti</a>
+					<a href="corsiRagazzi.html">Ragazzi</a>
+					<a href="corsiArtistica.html">Artistica</a>
+					<a href="storicoEventi.html">Storico Eventi</a>
+					<a href="lavoraConNoi.html">Lavora con Noi</a>
+				</nav>
+
 			</div>
         </header>
 
@@ -729,77 +1022,100 @@ a {
     </div>
 <!-- HEADER.TXT -->
 
-    
-<main>
-<section class="section">
-<div class="container">
+    <main>
+	<section class="section section-intro">
+		<div class="container">
+			<p class="intro-text">
+				Scopri i corsi di scherma artistica attivi nelle nostre sedi per la stagione 2025/2026.
+			</p>
+		</div>
+	</section>
+	
+        <section class="section">
+            <div class="container">
+                <!-- <h1 class="section-title">Scopri i corsi di scherma storica sportiva attivi nelle nostre sedi per la stagione 2025/2026.</h1> -->
 
-<h2 class="section-title">Privacy Policy</h2>
+                <div class="areas-grid">
+                    <article class="area-card" id="artistica">
+                        <div class="area-head">
+                            <div class="area-title-wrap">
+                                <div class="area-logo-shell">
+                                    <img src="img/Logo-Bande-di-Baldassarre.png" alt="Logo Bande di Baldassarre di Scipione" />
+                                </div>
+                                <div>
+                                    <h3>Artistica</h3>
+                                    <p class="area-manager"><strong>Responsabile di Area:</strong> Luca Semenzato</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="area-content">
+                            <div class="area-block">
+                                <h4>Corsi</h4>
+                                <ul class="course-list">
+                                    <li>
+										<div class="course-line">
+											<i class="fa-regular fa-calendar"></i>
+											<strong>Adulti</strong> — Sabato 02 Maggio 09:30
+											<br>
+											<i class="fa-solid fa-location-dot"></i>
+											<a href="https://www.google.com/maps/dir/?api=1&destination=Via+Ippogrifo+2,+37135+Verona+VR" target="_blank">Via Ippogrifo, 2, 37135 Verona VR</a>
+										</div>
+									</li>
+                                </ul>
+                            </div>
+                            <div class="area-block">
+                                <h4>Contatti</h4>
+                                <div class="contact-icons">
+                                    <a class="contact-icon" href="tel:+393312252977" aria-label="Telefono Vicenza" title="Telefono"><i class="fa-solid fa-phone"></i></a>
+                                    <a class="contact-icon" href="https://wa.me/393312252977" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Vicenza" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a class="contact-icon" href="tg://resolve?phone=393312252977" aria-label="Telegram Vicenza" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                                    <a class="contact-icon" href="mailto:vicenza@schermastoricavtaa.it" aria-label="Email Vicenza" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                                    <a class="contact-icon" href="https://www.facebook.com/schermastoricavicenza" target="_blank" rel="noopener noreferrer" aria-label="Facebook Vicenza" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a class="contact-icon" href="https://www.instagram.com/scherma_storica_vicenza/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Vicenza" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+					
+					<article class="area-card" id="villa-lagarina">
+                        <div class="area-head">
+                            <div class="area-title-wrap">
+                                <div class="area-logo-shell">
+                                    <img src="img/Logo-LightBlade.jpeg" alt="Logo LightBlade" />
+                                </div>
+                                <div>
+                                    <h3>LightBlade Fencing</h3>
+                                    <p class="area-manager"><strong>Responsabile di Area:</strong> Andrea Rossini</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="area-content">
+                            <div class="area-block">
+                                <h4>Corsi</h4>
+                                <ul class="course-list">
+                                    <li><div class="course-line"><i class="fa-regular fa-calendar"></i><strong>Ragazzi</strong> — Martedì e Giovedì 20:00<br><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/dir/?api=1&destination=Via+Stockstadt+Am+Rhein+9,+38060+Villa+Lagarina+TN" target="_blank" rel="noopener noreferrer">Via Stockstadt Am Rhein, 9, 38060 Villa Lagarina TN</a></div></li>
+                                </ul>
+                            </div>
+                            <div class="area-block">
+                                <h4>Contatti</h4>
+                                <div class="contact-icons">
+                                    <a class="contact-icon" href="tel:+393519731770" aria-label="Telefono Villa Lagarina" title="Telefono"><i class="fa-solid fa-phone"></i></a>
+                                    <a class="contact-icon" href="https://wa.me/393519731770" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Villa Lagarina" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a class="contact-icon" href="tg://resolve?phone=393519731770" aria-label="Telegram Villa Lagarina" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                                    <a class="contact-icon" href="mailto:villalagarina@schermastoricavtaa.it" aria-label="Email Villa Lagarina" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                                    <a class="contact-icon" href="https://www.facebook.com/SAAMlagarina" target="_blank" rel="noopener noreferrer" aria-label="Facebook Villa Lagarina" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a class="contact-icon" href="https://www.instagram.com/scherma_storica_lagarina/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Villa Lagarina" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
 
-<p>La presente informativa è resa ai sensi del Regolamento UE 2016/679 (GDPR).</p>
+                    </div>
+            </div>
+        </section>
 
-<h3>1. Titolare del trattamento</h3>
+    </main>
 
-<p>
-Società Sportiva Dilettantistica Scherma Storica Veneto Trentino Alto Adige<br>
-Partita IVA: 05140800235<br>
-Sede Legale: Località Vecchi 6 - 37019 Peschiera del Garda (VR)<br>
-PEC: <a href="mailto:vtaa@pec.schermastoricavtaa.it">vtaa@pec.schermastoricavtaa.it</a><br>
-REA: 473655
-</p>
-
-<h3>2. Tipi di dati raccolti</h3>
-
-<p>
-Il sito raccoglie esclusivamente <strong>dati tecnici di navigazione</strong>, quali ad esempio indirizzo IP, log di accesso e informazioni tecniche necessarie al funzionamento del sito.
-</p>
-
-<h3>3. Finalità del trattamento</h3>
-
-<p>
-I dati raccolti sono utilizzati esclusivamente per garantire il corretto funzionamento del sito
-e per finalità di sicurezza.
-</p>
-
-<h3>4. Base giuridica del trattamento</h3>
-
-<p>
-Il trattamento dei dati si basa sul <strong>legittimo interesse del titolare</strong> a garantire
-il funzionamento e la sicurezza del sito.
-</p>
-
-<h3>5. Conservazione dei dati</h3>
-
-<p>
-I dati tecnici sono conservati per il tempo strettamente necessario al raggiungimento delle finalità sopra indicate.
-</p>
-
-<h3>6. Diritti degli interessati</h3>
-
-<p>
-Gli utenti possono esercitare in qualsiasi momento i propri diritti, tra cui:
-accesso, rettifica, cancellazione, limitazione del trattamento dei dati.
-</p>
-
-<p>
-Per esercitare tali diritti è possibile contattare il titolare scrivendo a
-<a href="mailto:segreteria@schermastoricavtaa.it">
-segreteria@schermastoricavtaa.it
-</a>.
-</p>
-
-<h3>7. Hosting e servizi di terze parti</h3>
-
-<p>
-Il sito è ospitato su un servizio di hosting che può trattare dati tecnici (come indirizzo IP e log di accesso)
-al fine di garantire il funzionamento e la sicurezza del servizio.
-</p>
-
-</div>
-</section>
-</main>
-
-<!-- FOOTER.TXT -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -848,7 +1164,6 @@ al fine di garantire il funzionamento e la sicurezza del servizio.
             </div>
         </div>
     </footer>
-<!-- FOOTER.TXT -->
 
     <script>
         (function () {
@@ -869,6 +1184,5 @@ al fine di garantire il funzionamento e la sicurezza del servizio.
           window.addEventListener('resize', updateHeader);
         })();
     </script>
-
 </body>
 </html>

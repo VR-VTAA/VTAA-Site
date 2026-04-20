@@ -52,6 +52,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<!-- STYLE.TXT -->
     <style>
 
 :root {
@@ -311,6 +313,12 @@ a {
     color: var(--vtaa-red);
 }
 
+.course-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
 .course-list i,
 .footer-list i,
 .event-meta i {
@@ -429,6 +437,33 @@ a {
     margin-top: 1rem;
 }
 
+.footer-partners {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-partners a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: .5rem 0;
+    opacity: .9;
+    transition: opacity .2s ease, transform .2s ease;
+}
+
+.footer-partners a:hover {
+    opacity: 1;
+    transform: translateX(2px);
+}
+
+.footer-partners img {
+    max-height: 50px;
+    width: auto;
+    object-fit: contain;
+    /*filter: brightness(0) invert(1); /* bianco su sfondo scuro */
+}
+
 /* BOTTONI */
 
 .btn {
@@ -465,7 +500,7 @@ a {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
 }
 
@@ -631,34 +666,68 @@ a {
         width: 70px;
         height: 70px;
     }
+	
+	.course-list {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .course-list li {
+        display: block;
+        padding: .45rem 0;
+    }
+
+    .course-list > li > i {
+        display: none;
+    }
+
+    .course-line {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .course-line i {
+        margin-right: .3rem;
+    }
 
 }
 
 </style>
+<!-- STYLE.TXT -->
+	
 </head>
 <body>
-<div class="top-wrap" id="top-wrap">
+<!-- HEADER.TXT -->
+    <div class="top-wrap" id="top-wrap">
         <header class="site-header" id="site-header">
             <div class="container site-header-inner">
-    <a href="index.html" style="display:flex; align-items:center; gap:1rem; text-decoration:none;">
-        <img src="img/Logo-VTAA.png" alt="Logo SSD Scherma Storica Veneto Trentino Alto Adige" class="site-logo" />
-        <h2 class="site-title">SSD Scherma Storica Veneto Trentino Alto Adige</h2>
-    </a>
-</div>
+				<a href="index.html" style="display:flex; align-items:center; gap:1rem; text-decoration:none;">
+					<img src="img/Logo-VTAA.png" alt="Logo SSD Scherma Storica Veneto Trentino Alto Adige" class="site-logo" />
+					<h2 class="site-title">SSD Scherma Storica Veneto Trentino Alto Adige</h2>
+				</a>
+			</div>
         </header>
 
         <section class="hero">
-			<img
-				src="img/banner-youtube-vtaa.png"
-				alt="Schermidori della SSD Scherma Storica Veneto Trentino Alto Adige"
-				class="hero-banner"
-				width="2048"
-				height="461"
-				fetchpriority="high"
-			>
+			<picture>
+				<!-- Mobile -->
+				<source 
+					srcset="img/Banner-Youtube-VTAA-mobile.png" 
+					media="(max-width: 640px)">
+
+				<!-- Desktop (fallback) -->
+				<img
+					src="img/Banner-Youtube-VTAA.png"
+					alt="Schermidori della SSD Scherma Storica Veneto Trentino Alto Adige"
+					class="hero-banner"
+					width="2048"
+					height="461"
+					fetchpriority="high"
+				>
+			</picture>
 		</section>
     </div>
-
+<!-- HEADER.TXT -->
     
 <main>
 <section class="section">
@@ -720,7 +789,8 @@ La presente Cookie Policy può essere aggiornata in caso di modifiche tecniche o
 </section>
 </main>
 
-<footer class="footer">
+<!-- FOOTER.TXT -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div>
@@ -744,6 +814,20 @@ La presente Cookie Policy può essere aggiornata in caso di modifiche tecniche o
                         <a href="tg://resolve?phone=393479319727" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
                     </div>
                 </div>
+				
+				<div>
+					<h6>Partner</h6>
+
+					<div class="footer-partners">
+						<a href="https://www.businesschapter.it/" target="_blank">
+							<img src="img/logo-business-chapter.png" alt="Business Chapter">
+						</a>
+
+						<!--<a href="https://www.cama.academy/" target="_blank">
+							<img src="img/logo-cama.png" alt="CAMA">
+						</a>-->
+					</div>
+				</div>
             </div>
 
             <hr>
@@ -754,6 +838,7 @@ La presente Cookie Policy può essere aggiornata in caso di modifiche tecniche o
             </div>
         </div>
     </footer>
+<!-- FOOTER.TXT -->
 
     <script>
         (function () {
