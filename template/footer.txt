@@ -1,0 +1,50 @@
+<!-- FOOTER.TXT -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h5>SSD Scherma Storica Veneto Trentino Alto Adige</h5>
+                    <p>Partita IVA: 05140800235</p>
+                    <p>Sede Legale: Località Vecchi 6 - 37019 Peschiera del Garda (VR)</p>
+                    <p>PEC: vtaa@pec.schermastoricavtaa.it</p>
+                    <p>REA: 473655</p>
+                </div>
+
+                <div>
+                    <h6>Segreteria</h6>
+                    <ul class="footer-list">
+                        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:segreteria@schermastoricavtaa.it">Segreteria</a></li>
+                        <li><i class="fa-solid fa-phone"></i> <a href="tel:+393479319727">Reparto Commerciale</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/schermastoricavtaa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/schermastoricavtaa" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://wa.me/393479319727" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="tg://resolve?phone=393479319727" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+				
+				<div>
+					<h6>Partner</h6>
+
+					<div class="footer-partners">
+						<a href="https://www.businesschapter.it/" target="_blank">
+							<img src="img/logo-business-chapter.png" alt="Business Chapter">
+						</a>
+
+						<!--<a href="https://www.cama.academy/" target="_blank">
+							<img src="img/logo-cama.png" alt="CAMA">
+						</a>-->
+					</div>
+				</div>
+            </div>
+
+            <hr>
+            <div class="footer-bottom">
+                © 2026 Scherma Storica Veneto Trentino Alto Adige — Tutti i diritti riservati —
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="cookie.html">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+<!-- FOOTER.TXT -->
