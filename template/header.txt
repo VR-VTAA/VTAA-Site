@@ -1,0 +1,43 @@
+<!-- HEADER.TXT -->
+    <div class="top-wrap" id="top-wrap">
+        <header class="site-header" id="site-header">
+            <div class="container site-header-inner">
+
+				<div class="site-header-brand">
+					<a href="index.html" class="site-header-link">
+						<img src="img/Logo-VTAA.png" class="site-logo" />
+						<h2 class="site-title">SSD Scherma Storica Veneto Trentino Alto Adige</h2>
+					</a>
+				</div>
+
+				<nav class="site-nav">
+					<a href="corsiAdulti.html">Adulti</a>
+					<a href="corsiRagazzi.html">Ragazzi</a>
+					<a href="corsiArtistica.html">Artistica</a>
+					<a href="storicoEventi.html">Storico Eventi</a>
+					<a href="lavoraConNoi.html">Lavora con Noi</a>
+				</nav>
+
+			</div>
+        </header>
+
+        <section class="hero">
+			<picture>
+				<!-- Mobile -->
+				<source 
+					srcset="img/Banner-Youtube-VTAA-mobile.png" 
+					media="(max-width: 640px)">
+
+				<!-- Desktop (fallback) -->
+				<img
+					src="img/Banner-Youtube-VTAA.png"
+					alt="Schermidori della SSD Scherma Storica Veneto Trentino Alto Adige"
+					class="hero-banner"
+					width="2048"
+					height="461"
+					fetchpriority="high"
+				>
+			</picture>
+		</section>
+    </div>
+<!-- HEADER.TXT -->
