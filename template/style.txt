@@ -148,7 +148,7 @@ a {
 /* HERO */
 
 .hero {
-    padding-top: 145px;
+    padding-top: 0;
 }
 
 .hero-banner {

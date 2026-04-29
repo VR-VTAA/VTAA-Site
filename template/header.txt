@@ -25,12 +25,12 @@
 			<picture>
 				<!-- Mobile -->
 				<source 
-					srcset="img/Banner-Youtube-VTAA-mobile.png" 
+					srcset="img/Banner-Youtube-VTAA.jpg" 
 					media="(max-width: 640px)">
 
 				<!-- Desktop (fallback) -->
 				<img
-					src="img/Banner-Youtube-VTAA.png"
+					src="img/Banner-Youtube-VTAA.jpg"
 					alt="Schermidori della SSD Scherma Storica Veneto Trentino Alto Adige"
 					class="hero-banner"
 					width="2048"
