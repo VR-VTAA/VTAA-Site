@@ -162,7 +162,7 @@ a {
 }
 
 .hero {
-    padding-top: 92px;
+    padding-top: 0;
 }
 
 .hero-banner {
@@ -840,25 +840,56 @@ La presente Cookie Policy può essere aggiornata in caso di modifiche tecniche o
     </footer>
 <!-- FOOTER.TXT -->
 
-    <script>
-        (function () {
-          const header = document.getElementById('site-header');
-          const topWrap = document.getElementById('top-wrap');
+        <!-- <script> -->
+        <!-- (function () { -->
+          <!-- const header = document.getElementById('site-header'); -->
+          <!-- const topWrap = document.getElementById('top-wrap'); -->
 
-          function updateHeader() {
-            const trigger = topWrap.offsetHeight - header.offsetHeight - 230;
-            if (window.scrollY > trigger) {
-              header.classList.add('scrolled');
-            } else {
-              header.classList.remove('scrolled');
-            }
-          }
+          <!-- function updateHeader() { -->
+            <!-- const trigger = topWrap.offsetHeight - header.offsetHeight - 230; -->
+            <!-- if (window.scrollY > trigger) { -->
+              <!-- header.classList.add('scrolled'); -->
+            <!-- } else { -->
+              <!-- header.classList.remove('scrolled'); -->
+            <!-- } -->
+          <!-- } -->
 
-          updateHeader();
-          window.addEventListener('scroll', updateHeader, { passive: true });
-          window.addEventListener('resize', updateHeader);
-        })();
-    </script>
+          <!-- updateHeader(); -->
+          <!-- window.addEventListener('scroll', updateHeader, { passive: true }); -->
+          <!-- window.addEventListener('resize', updateHeader); -->
+        <!-- })(); -->
+    <!-- </script> -->
+	<script>
+		(function () {
+		  const header = document.getElementById('site-header');
+		  const hero = document.querySelector('.hero');
+
+		  function updateLayout() {
+			const headerHeight = header.offsetHeight;
+
+			// sposta il contenuto sotto l’header
+			hero.style.paddingTop = headerHeight + 'px';
+		  }
+
+		  function updateHeader() {
+			const topWrap = document.getElementById('top-wrap');
+			const trigger = topWrap.offsetHeight - header.offsetHeight - 350;
+
+			if (window.scrollY > trigger) {
+			  header.classList.add('scrolled');
+			} else {
+			  header.classList.remove('scrolled');
+			}
+		  }
+
+		  updateLayout();
+		  updateHeader();
+
+		  window.addEventListener('resize', updateLayout);
+		  window.addEventListener('scroll', updateHeader, { passive: true });
+
+		})();
+</script>
 
 </body>
 </html>
